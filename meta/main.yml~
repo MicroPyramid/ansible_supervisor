@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  author: Jagadeesh, Dinesh
+  description: 
+  company: MicroPyramid
+  license: MIT
+  min_ansible_version: 1.2
+  
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  
+  categories:
+  - web
+
+dependencies: 
+  - { role: update_ubuntu } 
+  - { role: nginx } 
+  - { role: uwsgi } 
+  - { role: supervisor } 
+  - { role: mysql_server, mysql_server_password : 'password', when: database == 'mysql' } 
+  - { role: postgresql, when: database == 'postgresql' } 
+  
