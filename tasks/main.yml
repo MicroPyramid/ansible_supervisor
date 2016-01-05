@@ -1,0 +1,4 @@
+---
+# tasks file for supervisor
+- name: Install supervisor
+  apt: "name='supervisor' state=present force=yes"
