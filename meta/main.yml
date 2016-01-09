@@ -10,9 +10,12 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - trusty
+    - vivid
+    - precise
   
   categories:
   - monitoring
   - system
+  - supervisor
 
 dependencies: []
